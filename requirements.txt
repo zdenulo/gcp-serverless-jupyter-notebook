@@ -1,0 +1,4 @@
+pandas==1.2.4
+requests==2.25.1
+pyarrow==1.20.2
+google-cloud-bigquery[pandas]==2.13.1
