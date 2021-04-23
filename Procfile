@@ -1,0 +1,1 @@
+web: gunicorn -p $PORT main:app -t 0
