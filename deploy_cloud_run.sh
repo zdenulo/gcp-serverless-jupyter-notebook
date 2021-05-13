@@ -1,6 +1,10 @@
 #!/bin/bash
 
-gcloud beta run deploy cr-jn \
+# set GCP_PROJECT (env) variable
+CLOUD_RUN_NAME=cr-jn
+
+gcloud beta run deploy $CLOUD_RUN_NAME \
+  --project $GCP_PROJECT \
   --memory 512Mi \
   --source . \
   --platform managed \
